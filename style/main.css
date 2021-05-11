@@ -1,0 +1,375 @@
+/*geral*/
+
+body{
+    margin: 0;
+    background-image: url('../img/fundo-.webp');
+    background-repeat: repeat;
+    text-align: left;
+    height: 100%;
+    background-size: cover;
+}
+
+p , h1, h2, textarea {
+    margin: 0;
+}
+
+/*navbar*/
+#navbar{
+    background-color: #FFF;
+    color: #400e97;
+    padding: 20px;
+    height: 60px;
+}
+
+#navbar h2, #navbar ul, #navbar-list li,#navbar nav{
+    display: inline-block;
+}
+
+#navbar h2{
+    margin: 0;
+    line-height: 60px;
+    margin-left: 55px;
+}
+
+#navbar img{
+    height: 65px;
+    position: absolute;
+    padding: 0 5px;
+}
+
+#navbar nav{
+    float: right;
+}
+
+#navbar ul{
+    margin-top: 22px;
+}
+
+#navbar li{
+    margin: 0 10px;
+}
+
+#navbar-list li a{
+    text-decoration: none;
+    color: #400e97;
+    padding: 8px 8px;
+    font-family: montserrat, gotham, arial;
+}
+
+#navbar-list li a:hover {
+    border-bottom: 1px solid #de064b;
+    background-color: #de064b;
+    color: #EEEE;
+    border-radius: 25px;
+    transition: .3s;
+}
+
+#orcamento a{
+    margin-top: 12px;
+    text-decoration: none;
+    background-color: #400e97;
+    color: #EEEE;
+    padding: 8px 8px;
+    font-family: montserrat, gotham, arial;
+    float: right;
+    border-radius: 8px;
+    padding: 0.5rem 2rem;
+    font-size: 1.25rem;
+}
+
+#orcamento a:hover{
+    transition: .3s;
+    text-decoration: none;
+    color: #de064b;
+}
+
+
+/* banner */
+
+#main-banner{
+    background-image: url('../img/Marketing-de-sucesso_1.webp');
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30vh;
+}
+
+/* about */
+
+#about-section{
+    
+    text-align: left;
+    height: 100vh;
+    background-size: cover;
+    padding-top: 160px;
+    padding-left: 50px;
+}
+
+#about-section img{
+    height: 400px;
+    
+}
+
+.conteudo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: #400e97;
+    line-height: 50px;
+}
+
+.conteudo p{
+    max-width: 750px;
+    padding: 20px;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+#servico img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    padding-top: 25px;
+}
+
+/* skills*/
+
+.container {
+    display: flex; /* ou inline-flex */
+    justify-content:space-around;
+    width: 100%;
+    font-family: MONTSERRAT-LIGHT;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.container .caixa{
+    background: rgba(64, 14, 151, 0.9);
+    width: 400px;
+    height: 450px;     
+    margin: 8px 4px;
+    color: #fff;
+    padding: 4rem;
+    border-radius: 25px;
+}
+
+.caixa .image{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.caixa .image .pr{
+    margin-right: 1rem;
+}
+
+.container .caixa p{
+    height: 80%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 2rem;
+    font-family: montserrat-regular, sans-serif;
+    font-size: 1.2rem;
+}
+
+.caixa .image h3{
+    font-family: MONTSERRAT-MEDIUMITALIC, sans-serif;
+}
+
+/* footer */
+
+footer {
+    background-color: #400e97;
+    color: #FFF;
+    height: 50vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5%;
+}
+
+footer > p{
+    margin: 1rem 0;
+    text-align: center;
+    font-family: MONTSERRAT-LIGHT, sans-serif;
+    font-size: 1.25rem;
+    width: 100%;
+}
+
+.imgfo{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.imgfo img{
+    margin-right: 1rem;
+    width: 35px;
+}
+
+.imgfo p{
+    font-family: MONTSERRAT-LIGHT, sans-serif;
+    font-size: 1.50rem;
+}
+
+footer .detail{
+    font-weight: bold;
+}
+
+footer .detail a{
+    text-decoration: none;
+    color: #EEEE;
+}
+
+/* responsivo */
+@media(max-width: 450px){
+
+    /* geral*/
+    p, input, textarea{
+        font-size: 1.2rem;
+    }
+
+    /* navbar */
+    #navbar h2{
+        display: none;
+    }
+
+    #navbar img {
+        top: 9px;        
+    }  
+
+    #navbar ul {
+        margin-top: 1.1rem;
+    }
+
+    #navbar-list li a{
+        font-size: 1.2rem;
+    }
+
+
+/* banner */
+
+#main-banner {
+    height: 250px;
+    width: auto;
+    padding-top: 5vh;
+}
+
+/* about */
+
+#about-section {
+    padding: 1.2rem;
+    height: auto;
+    padding-bottom: 50px;
+    }
+
+.conteudo{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo img{
+    width: 90%;
+    height: auto!important;
+    margin-top: 5rem;
+}
+
+.conteudo p{
+    font-size: 1.3rem;
+    line-height: 40px;
+    padding-bottom: 5rem;
+    margin-top: 3rem;
+}
+
+    /* skills */
+
+.container {
+    flex-direction: column;
+}
+
+.container .caixa{
+    width: 80%;
+    height: 350px;
+    padding: 1rem;
+}
+
+.container .caixa .image img{
+    width: 50px;
+    height: 50px;
+}
+
+.container .caixa .image h3{
+    font-size: 1.2rem;
+}
+
+.container .caixa p{
+    font-size: 1rem;
+}
+
+
+/* */
+
+footer > p{
+    margin: 1rem 0;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.imgfo p{
+    font-size: 0.9rem;
+}
+
+}
+
+
+/* MENU MOBILE */
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar>.container-fluid{
+    justify-content: center!important;
+}
+
+.navbar-brand{
+    margin-right: 0!important;
+}
+
+.navbar-brand img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.navbar-nav{
+    width: 45%;
+    justify-content: space-between!important;
+    align-items: center!important;
+}
+
+.navbar-nav li{
+    margin: 0.5rem 0;
+}
+
+.navbar-nav li .nav-link{
+    font-size: 1.2em;
+    color: #400e97!important;
+    transition: .3s;
+}
+
+.navbar-nav li .nav-link:hover{
+    color: #de064b!important;
+    transition: .3s;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav{
+        width: 100%;
+    }
+}
